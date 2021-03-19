@@ -15,10 +15,11 @@ char enigma::input(char ch) {
 	// For every keyboard press we increment turnindex and that causes randomness on the rotors. 
 	int smallturnindex = turnindex;
 	if (turnindex > 25) { // To avoid string overflow.
-		smallturnindex = turnindex % 10;
+		smallturnindex = turnindex % 25;
 	}	
+	char tempchar = RightRotor1[0];
 	RightRotor1.erase(0, 1);
-	RightRotor1.push_back(keyboard[smallturnindex]);
+	RightRotor1.push_back(tempchar);
 	// Center and left rotors also rotate by 1 as turnindex increases.
 	if (turnindex % 3 == 0) {
 		CenterRotor1.erase(0, 1);
@@ -102,7 +103,7 @@ std::string enigma::test(std::string message) {
 
 int main() {
 	enigma encryption("CAT");
-	std::string encrypedMessage = encryption.test("TESTENCRPYTION OF ENIGMAMACHINE");
+	std::string encrypedMessage = encryption.test("TESTENCRPYTIONOFENIGMAMACHINE");
 	std::cout << encrypedMessage << std::endl;
 	enigma decryption("CAT");
 	std::string decryptedMessage = decryption.test(encrypedMessage);
