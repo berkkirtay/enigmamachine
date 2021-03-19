@@ -2,11 +2,11 @@ Basic enigma machine implementation with c++
 
 Results:
         
-	Test keyword : "TESTENCRPYTIONOFENIGMAMACHINE"
+	Test keyword : "TESTENCRYPTIONOFENIGMAMACHINE"
 	
-	"TWYELOOGYKDHWUQMLOBFHRMDPTBSZ"  -> after encryption with "CAT" mode
+	"TWYELOOGPFDHWUQMLOBFHRMDPTBSZ"  -> after encryption with "CAT" mode
 	
-	"LFAJCILUNHPKRQSJIYJDOYLSXXTOF"  -> after encryption with "WATER" mode
+	"LFAJCILUWJPKRQSJIYJDOYLSXXTOF"  -> after encryption with "WATER" mode
 	
-	"TESTENCRPYTIONOFENIGMAMACHINE"  -> after decryption 
+	"TESTENCRYPTIONOFENIGMAMACHINE"  -> after decryption 
 	

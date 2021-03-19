@@ -103,15 +103,11 @@ std::string enigma::test(std::string message) {
 
 int main() {
 	enigma encryption("CAT");
-	std::string encrypedMessage = encryption.test("TESTENCRPYTIONOFENIGMAMACHINE");
+	std::string encrypedMessage = encryption.test("TESTENCRYPTIONOFENIGMAMACHINE");
 	std::cout << encrypedMessage << std::endl;
 	enigma decryption("CAT");
 	std::string decryptedMessage = decryption.test(encrypedMessage);
 	std::cout << decryptedMessage << std::endl;
-	/*Results:
-	TWYELOOGYKDHWU TM ODBUSDFPPCJSC  -> after encryption
-	TESTENCRPYTION OF ENIGMAMACHINE  -> after decryption
-	*/
 
 	return 0;
 }
