@@ -1,4 +1,5 @@
 Basic enigma machine emulation with c++ 
+
 This version has only 3 rotors but we can increase rotor numbers for a cryptanalysis.
 
 Test 1:
