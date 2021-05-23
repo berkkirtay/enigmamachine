@@ -20,7 +20,7 @@ Test 2:
 	
 	After decryption: "TESTENCRYPTIONOFENIGMAMACHINE TESTENCRYPTIONOFENIGMAMACHINE TESTENCRYPTIONOFENIGMAMACHINE TESTENCRYPTIONOFENIGMAMACHINE TESTENCRYPTIONOFENIGMAMACHINE" 
 	
-	We observe that encryption of the same plaintext changes as it continues because rotors are turning at every cycle.	
+	Since the rotors rotate in each cycle, we observe that the encryption of the same plaintext changes as it continues.
 	
 Test 3: 
 	
